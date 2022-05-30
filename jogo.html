@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da forca - Oracle One</title>
+    </head>
+    <body>
+        <header>
+            <div class="caixa-logo"> 
+                <img src="img/logo_alura.png" alt="Logo Alura" class="logo-alura">
+            </div>
+        </header>
+        <main>
+            <div class="caixa-botao">
+                <div class="forca">
+                    <canvas id="boneco" width="294" height="360"></canvas>
+                </div>
+                <div class="letras">
+                    <input type="text" id="resultado" class="input-padrao" readonly>
+                    <input type="text" id="letras-digitadas" class="input-padrao" readonly>
+                    <canvas id="letras" width="464" height="162"></canvas>
+                    <input type="text" id="letras-tentadas" class="input-padrao" readonly>
+                </div>
+                <a href="jogo.html">
+                    <button class="bt-reiniciar">Novo jogo</button>
+                </a>
+                <a href="index.html">
+                    <button class="bt-desistir">Desistir</button>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <div class="rotape">
+                <h2>Alura - Oracle Next Education by Edu Silva - 2022</h2>
+            </div>
+        </footer>
+        <script src="js/jogo.js"></script>
+    </body>
+</html>

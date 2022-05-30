@@ -1,0 +1,282 @@
+/*index.html*/
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #E5E5E5;
+}
+/*Remove traçado azul do input*/
+
+.caixa-logo{
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+.logo-alura{
+    position: absolute;
+    top: 40px;
+    left: 36.67%;
+    right: 37.43%;
+}
+
+.caixa-botao {
+    width: 78%;
+    height: 700px;
+    position: relative;
+}
+
+
+.bt-novo-jogo{
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 317px;
+    height: 105px;
+    left: 562px;
+    top: 394px;
+    border: none;
+    background: #0A3871;
+    border-radius: 24px;
+}
+
+.bt-nova-palavra{
+    position: absolute;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    padding: 24px;
+    position: absolute;
+    width: 317px;
+    height: 102px;
+    left: 562px;
+    top: 528px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+}
+
+.bt-nova-palavra:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+	transform: scale(1.009);
+}
+.bt-novo-jogo:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+	transform: scale(1.009);
+}
+
+/*nova-palavra.html*/
+
+.input-padrao{
+    position: absolute;
+    width: 413px;
+    height: 50px;
+    left: 300px;
+    top: 100px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+    background: #E5E5E5;
+    color: #0A3871;
+}
+
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+::-webkit-input-placeholder {
+    color: #0A3871;
+ }
+
+
+.bt-salvar{
+    position: absolute;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    padding: 24px;
+    position: absolute;
+
+    width: 332px;
+    height: 67px;
+
+    left: 70%;
+    top: 501px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+}
+
+.bt-cancelar{
+    position: absolute;
+    color: white;
+    font-size: 16px;
+
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+
+    width: 332px;
+    height: 67px;
+
+    left: 30%;
+    top: 501px;
+    border: none;
+    background: #0A3871;
+    border-radius: 24px;
+}
+
+.bt-salvar:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+	transform: scale(1.009);
+}
+.bt-cancelar:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+	transform: scale(1.009);
+}
+
+/*jogo.html*/
+.bt-reiniciar{
+    position: absolute;
+    background: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    padding: 24px;
+    position: absolute;
+
+    width: 332px;
+    height: 67px;
+
+    left: 70%;
+    top: 588px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+}
+
+.bt-desistir{
+    position: absolute;
+    color: white;
+    font-size: 16px;
+
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+
+    width: 332px;
+    height: 67px;
+
+    left: 30%;
+    top: 588px;
+    border: none;
+    background: #0A3871;
+    border-radius: 24px;
+}
+
+.bt-reiniciar:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+	transform: scale(1.009);
+}
+.bt-desistir:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+	transform: scale(1.009);
+}
+
+.forca{
+    position: absolute;
+    left: 50%;
+}
+
+.letras {
+    position: absolute;
+    left: 43%;
+    top: 50%;
+}
+
+#letras-digitadas{
+    position: absolute;
+    left: 5px;
+    font-size: 45px;
+    top: 40px;
+    padding: 0px;
+    gap: 24px;
+    width: 464px;
+    height: 36px;
+    background-color: #E5E5E5;
+    letter-spacing: 42px;
+}
+
+#letras-tentadas {
+    position: absolute;
+    left: 5px;
+    font-size: 45px;
+    top: 100px;
+    padding: 0px;
+    gap: 24px;
+    width: 464px;
+    height: 36px;
+    color: rgb(73, 73, 73);
+    background-color: #E5E5E5;
+    letter-spacing: 15px;
+}
+
+#resultado{
+    position: absolute;
+    left: 5px;
+    font-size: 28px;
+    top: 160px;
+    padding: 0px;
+    gap: 24px;
+    width: 764px;
+    height: 36px;
+    background-color: #E5E5E5;
+}
+
+.vitoria{
+    color: green;
+}
+.derrota{
+    color: red;
+}
+
+.rotape{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color: #0A3871;
+}
+
+
+@media screen and (max-width:480px) {
+    .caixa-botao{
+        width: 10px;
+        height: 800px;
+    }
+    .bt-desistir {
+        top: 670px;
+        left: 50px;
+    }
+    .bt-reiniciar{
+        left: 50px;
+    }
+    .rotape{
+        left:50%;
+        text-align: center;
+
+    }
+}
