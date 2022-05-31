@@ -80,6 +80,7 @@ function jogo(event) {
         resultado.value='Você perdeu! A resposta era: '+arrayResposta.join('');
         resultado.classList.add('derrota');
     }else if (arrayResposta.join('')==arrayTentativa.join('')){
+        tela.removeEventListener('keypress', jogo)
         resultado.value='Parabéns, você venceu!';
         resultado.classList.add('vitoria');
     }
@@ -89,7 +90,7 @@ function desenhaBase(){
     var tela = document.querySelector('#boneco');
     var pincelBoneco = tela.getContext('2d');
     var base= new Image();
-    base.src= '/img/base.png';
+    base.src= 'img/base.png';
     base.addEventListener('load', function(){
         pincelBoneco.drawImage(this, 0, 0);
     })
@@ -100,7 +101,7 @@ function desenhaErros(erros){
     var pincelBoneco = tela.getContext('2d');
     if (erros==1){
         var erro1 = new Image();
-        erro1.src= '/img/erro1.png'
+        erro1.src= 'img/erro1.png'
         erro1.addEventListener('load', function(){
             pincelBoneco.drawImage(this, 224, 41);
         })
@@ -108,7 +109,7 @@ function desenhaErros(erros){
 
     if (erros==2){
         var erro2 = new Image();
-        erro2.src= '/img/erro2.png'
+        erro2.src= 'img/erro2.png'
         erro2.addEventListener('load', function(){
             pincelBoneco.drawImage(this, 254, 100);
         })
@@ -116,7 +117,7 @@ function desenhaErros(erros){
     
     if (erros==3){
         var erro3 = new Image();
-        erro3.src= '/img/erro3.png'
+        erro3.src= 'img/erro3.png'
         erro3.addEventListener('load', function(){
             pincelBoneco.drawImage(this, 220, 120);
         })
@@ -124,7 +125,7 @@ function desenhaErros(erros){
 
     if (erros==4){
         var erro4 = new Image();
-        erro4.src= '/img/erro4.png'
+        erro4.src= 'img/erro4.png'
         erro4.addEventListener('load', function(){
             pincelBoneco.drawImage(this, 255, 120);
         })
@@ -132,7 +133,7 @@ function desenhaErros(erros){
 
     if (erros==5){
         var erro5 = new Image();
-        erro5.src= '/img/erro5.png'
+        erro5.src= 'img/erro5.png'
         erro5.addEventListener('load', function(){
             pincelBoneco.drawImage(this, 220, 230);
         })
@@ -140,7 +141,7 @@ function desenhaErros(erros){
 
     if (erros==6){
         var erro6 = new Image();
-        erro6.src= '/img/erro6.png'
+        erro6.src= 'img/erro6.png'
         erro6.addEventListener('load', function(){
             pincelBoneco.drawImage(this, 255, 230);
         })
